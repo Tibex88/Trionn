@@ -4,7 +4,8 @@ export default {
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
-    theme: {
+  darkMode:'class',
+  theme: {
     extend: {
       colors:{
         woodsmoke:"#121315",

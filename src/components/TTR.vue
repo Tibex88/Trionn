@@ -5,7 +5,7 @@
   time to roar!
 </h2>
 
-<button class="bg-french_pass text-shark p-4 px-10 capitalize rounded-full">
+<button class="dark:bg-french_pass bg-black dark:text-black text-porcelain p-4 px-10 capitalize rounded-full">
   lets talk!
 </button>
 
@@ -13,14 +13,14 @@
   <p class="flex flex-col text-xl">
     <span> Email </span>
     
-      <span class="text-3xl"> hello@trionn.com </span>
+      <span class="text-3xl font-semibold"> hello@trionn.com </span>
     </p>
 
     <p class="flex flex-col text-xl">
       <span>
         Call
       </span>
-      <span class="text-3xl">
+      <span class="text-3xl font-semibold">
         +91 98241 82099
 
       </span>
@@ -30,7 +30,7 @@
       <span>
         Skype
       </span>
-      <span class="text-3xl">
+      <span class="text-3xl font-semibold">
         talk.trionn
         
       </span>
@@ -39,7 +39,7 @@
   
     <div class="flex justify-between w-full"> 
       <p>©2024 TRIONN®</p>
-      <div class="text-french_pass outline outline-1 p-3 aspect-square rounded-full flex items-center justify-center">&#8593;</div>
+      <div class="dark:text-french_pass text-black text outline outline-1 p-3 aspect-square rounded-full flex items-center justify-center">&#8593;</div>
     </div>
   
 </div>

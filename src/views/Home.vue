@@ -1,3 +1,12 @@
+<script setup>
+import Hero from '../components/Hero.vue';
+import Button from '../components/Button.vue';
+import Achievement from '../components/Achievement.vue';
+import PartnerCard from '../components/PartnerCard.vue';
+import WorksCard from '../components/WorksCard.vue';
+
+</script>
+
 <template>
 
     <Hero 
@@ -11,17 +20,26 @@
     </div>
 
     <!-- video -->
-    <!-- <video src="./assets/intro-video.mp4" loop muted>
-    </video>  -->
+     <video class="rounded-2xl " src="./../assets/intro-video.mp4" loop muted autoplay> 
+    </video> 
 
     <!-- Recent Works -->
-    <section class="flex flex-col gap-8 mb-32 capitalize">
+    <section class="flex flex-col gap-8 my-32 capitalize">
         <div>
             <h2 class="text-6xl uppercase font-bold">Recent Works </h2>
             <p class="text-2xl">
             In the creative wilderness clients find our work truly beloved. 
             </p>
         </div>
+
+            <div class="">
+                
+                <WorksCard />
+                <WorksCard />
+                <WorksCard />
+                <WorksCard />
+                <WorksCard />
+            </div>
         <Button class="self-center" label="view all work" />
     </section>
 
@@ -68,8 +86,6 @@
                 Take heed, as the lion's roar in our client 
                 reviews resounds. 
             </p>
-
-        dfdfg
         </div>
 
         <!-- slider -->
@@ -90,10 +106,3 @@
 
 </template>
 
-<script setup>
-import Hero from '../components/Hero.vue';
-import Button from '../components/Button.vue';
-import Achievement from '../components/Achievement.vue';
-import PartnerCard from '../components/PartnerCard.vue';
-
-</script>
