@@ -1,9 +1,9 @@
 <template>
-<div class="uppercase text-center flex flex-col gap-5 h-screen justify-center">
-    <p class="text-4xl font-bold">experience our wild digital magic.</p>
-    <p class="text-sm">Experience the wild array ofservices that make your companystand out</p>
-</div>
 
+    <Hero 
+    title="experience our wild digital magic."
+    subtitle="Experience the wild array ofservices that make your companystand out"
+    />
 
     <div>
         <!-- <img /> -->
@@ -12,3 +12,8 @@
     </div>
 
 </template>
+
+<script setup>
+import Hero from '../components/Hero.vue';
+
+</script>

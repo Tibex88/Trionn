@@ -10,7 +10,7 @@ export default {
         woodsmoke:"#121315",
         woodsmoke_2:"#17181a",
         french_pass:"#c5fcfc",
-        french_pass:"#39c202",
+        french_pass2:"#39c202",
         limeade:"#39c202",
         summer_green:"#99bfaf",
         tiara:"#c8d0d1",
