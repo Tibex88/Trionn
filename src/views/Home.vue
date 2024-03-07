@@ -35,14 +35,24 @@ import WorksCard from '../components/WorksCard.vue';
         </div>
 
             <div class="">
-                
-                <WorksCard />
-                <WorksCard />
-                <WorksCard />
-                <WorksCard />
-                <WorksCard />
+
+                <WorksCard 
+                    title="LoftLoom" 
+                    subtitle="Research, UX, UI Design" 
+                    img="../assets/imusic-main.webp" />
+
+                <WorksCard 
+                    title="imusic" 
+                    subtitle="Research, UX, UI Design" 
+                    img="../assets/imusic-main.webp" />
+
+                <WorksCard 
+                    title="TECHNIS" 
+                    subtitle="Research, UX, UI Design" 
+                    img="../assets/imusic-main.webp" />
             </div>
-        <Button class="self-center" label="view all work" />
+
+            <Button class="self-center" label="view all work" />
     </section>
 
     <!-- Who are we  -->
@@ -67,7 +77,7 @@ import WorksCard from '../components/WorksCard.vue';
         </div>
         
 
-        <div class="flex flex-col gap-5">
+        <div class="cards flex flex-col gap-5">
 
             <Achievement 
                 :isOrange="true"

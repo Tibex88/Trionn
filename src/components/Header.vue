@@ -10,13 +10,13 @@ var routes = ref([
   {name:"Contact",link:"/contact"},
 ])
 
-gsap.fromTo('.nav',
-  {
+// gsap.fromTo('.nav',
+//   {
 
-  },
-  {
+//   },
+//   {
 
-  })
+//   })
 
 var soundOn = ref(true)
 let menu = ref(false)
