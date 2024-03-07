@@ -1,7 +1,14 @@
 <template>
-    <div class="flex flex-col items-center gap-5">  
+    
+    <div class="flex flex-col items-center gap-5 mb-5">  
+        
         <img class="rounded-2xl" src="./../assets/imusic-main.webp" alt="">
-        <h3 class="font-bold text-3xl">imusic</h3>
-        <p>Research, UX, UI Design</p>
+        
+        <div>
+            <p class="font-bold text-3xl">
+                imusic
+            </p>
+            <p>Research, UX, UI Design</p>
+        </div>
     </div>
 </template>

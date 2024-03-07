@@ -1,5 +1,5 @@
 <template>
-        <div class="flex flex-col items-start gap-12">
+        <div class="flex flex-col items-start gap-12 p-5">
 
 <h2 class="text-6xl uppercase font-bold">
   time to roar!
