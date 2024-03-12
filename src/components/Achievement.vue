@@ -4,6 +4,7 @@
 import gsap from 'gsap';
 import { ref, onMounted } from 'vue'
 // import { SplitText } from 'gsap/all';
+// import gsap from 'gsap-trial';
 import SplitText from 'gsap-trial/SplitText';
 import ScrollTrigger from 'gsap-trial/ScrollTrigger';
 
@@ -14,57 +15,33 @@ const card = ref(null)
 
 gsap.registerPlugin(SplitText, ScrollTrigger)
 
-var split_values = new SplitText(".num",{type:"chars"})
-// console.log(split_values)
-let chars = split_values.chars
+onMounted(()=>{
+
+let tl = gsap.timeline()
+let st = gsap.timeline()
 
 
-// let tl = gsap.timeline()
-// let dr = gsap.timeline()
-
-// tl.to(chars,{
-//     stagger:0.4,
-//     y:"-35%",
-//     paused: true ,
-//     duration:2,
-// })
-
-// function play(){
-//     tl.resume()
-//     console.log(tl)
-//     console.log("play")
-// }
-
-// function reverse(){
-//     tl.reverse()
-// }
-
-// gsap.to(".ach",{
-//     x:"150%",
-//     // repeat:true,
-//     rotate:30,
-//     duration:2,
-//     stagger:0.5,
-//     // scrub:true,
-//     scrollTrigger:{
-//         trigger:".cards",
-//         start:"top center",
-//         end:"top 15%",
-//         // bottom:"bottom 80%",
-//         markers:true
-//     }
-// })
-
-onMounted(() => {
-
-const observer = new IntersectionObserver(entries => {
-    let el = entries[0]
-    // console.log({el})
-    el.target.classList.toggle("show", el.isIntersecting)
-    // observer.unobserve(el.target)
-}, {threshold:0.8})
-
-observer.observe(card.value)
+st.fromTo(card.value,{
+    x:100,
+},{
+    // scrub:true,
+    scrollTrigger:{
+        trigger:".card",
+        opacity:0,
+        toggleActions:"play none none none ",
+        //            onEnter onLeave   onEnterBack  onLeaveBack
+        onEnter: () =>{console.log("on enter")},
+        onLeave: () =>{console.log("on leave")},
+        onEnterBack: () =>{console.log("on enter back")},
+        onLeaveBack: () =>{console.log("on leave back")},
+        start:"top 60%",
+        end:"top 40%",
+        markers:true,
+        // toggleClass:"show"
+    },
+    x:0,
+    duration:3
+})
 
 })
 
@@ -82,12 +59,13 @@ observer.observe(card.value)
         }"
     @mouseenter="play"
     @mouseleve="reverse"
-    class="ach group text-black translate-x-full transition-colors duration-700 rounded-2xl w-full flex flex-col gap-4 p-8 uppercase font-bold"
+    id="card"
+    class="card group text-black  transition-colors duration-700 rounded-2xl w-full flex flex-col gap-4 p-8 uppercase font-bold"
     >
         <!-- <div class="">   -->
             <div class="self-start text-5xl overflow-hidden h-min">
                 
-                <p class="w-fit max-h-12 group-hover:translate-x-full transition-transform duration-200">
+                <p class="w-fit max-h-12 group-hover:-translate-y-full transition-transform duration-200">
                 <!-- <p class=" w-fit max-h-12"> -->
                    <p class="num">{{ num }}</p> <p class="num">{{ num }}</p>
                 </p>
@@ -106,10 +84,10 @@ observer.observe(card.value)
 
 <style scoped>
 .show{
-    /* background-color: brown; */
+    background-color: brown;
     transition: all 3s ease-in-out linear;
-    transform:translateX(-10px);
-    /* rotate:15deg; */
+    transform:translateX(100px);
+    rotate:15deg;
 }
 </style>
 
