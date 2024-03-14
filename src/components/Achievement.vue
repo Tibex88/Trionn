@@ -64,7 +64,7 @@ const observer = new IntersectionObserver(entries => {
     // observer.unobserve(el.target)
 }, {threshold:0.8})
 
-observer.observe(card.value)
+// observer.observe(card.value)
 
 })
 
@@ -82,7 +82,7 @@ observer.observe(card.value)
         }"
     @mouseenter="play"
     @mouseleve="reverse"
-    class="ach group text-black translate-x-full transition-colors duration-700 rounded-2xl w-full flex flex-col gap-4 p-8 uppercase font-bold"
+    class="ach group text-black  transition-colors duration-700 rounded-2xl w-full flex flex-col gap-4 p-8 uppercase font-bold"
     >
         <!-- <div class="">   -->
             <div class="self-start text-5xl overflow-hidden h-min">
@@ -108,7 +108,7 @@ observer.observe(card.value)
 .show{
     /* background-color: brown; */
     transition: all 3s ease-in-out linear;
-    transform:translateX(-10px);
+
     /* rotate:15deg; */
 }
 </style>
