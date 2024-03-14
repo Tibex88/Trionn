@@ -77,7 +77,7 @@ import WorksCard from '../components/WorksCard.vue';
         </div>
         
 
-        <div class="cards flex flex-col gap-5">
+        <div class="cards relative outline outline-1 p-4 flex flex-col gap-5">
 
             <Achievement 
                 :isOrange="true"
@@ -85,12 +85,12 @@ import WorksCard from '../components/WorksCard.vue';
                 label="awards & recognition" 
             />
             
-            <Achievement 
+            <!-- <Achievement 
                 :isGrey="true"
                 num="900+" 
                 label="projects completed" 
-            />
-
+            /> -->
+<!-- 
             <Achievement 
                 :isGreen="true"
                 num="20+" 
@@ -101,7 +101,7 @@ import WorksCard from '../components/WorksCard.vue';
                 :isYellow="true"
                 num="20+" 
                 label="years of experience"  
-                />
+                /> -->
         </div>
     </section>
 
