@@ -13,9 +13,9 @@ var isDark = ref(false)
 
 <template>
 
-  <div :class="isDark ? 'dark': ''" class="outline outline-8 outline-red">
+  <div :class="isDark ? 'dark': ''">
       
-    <div class="container outline outline-4 w-screen dark:bg-woodsmoke bg-porcelain dark:text-aqua_haze text-black ">
+    <div class="container outline outline-4 dark:bg-woodsmoke bg-porcelain dark:text-aqua_haze text-black ">
 
         <Header v-model="isDark" />
 

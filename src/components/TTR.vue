@@ -1,3 +1,5 @@
+
+import UpArrow from './UpArrow.vue';
 <template>
         <div class="flex flex-col items-start gap-12 p-5">
 
@@ -9,7 +11,7 @@
   lets talk!
 </button>
 
-<div class="flex flex-col gap-8 border-y-2 w-full py-8 mt-5">
+<div class="flex flex-col gap-6 border-y-2 w-full py-8 mt-5">
   <p class="flex flex-col text-xl">
     <span> Email </span>
     
@@ -39,7 +41,8 @@
   
     <div class="flex justify-between w-full"> 
       <p>©2024 TRIONN®</p>
-      <div class="dark:text-french_pass text-black text outline outline-1 p-3 aspect-square rounded-full flex items-center justify-center">&#8593;</div>
+      <!-- <UpArrow /> -->
+      <!-- <img class="aspect-square w-12 stroke-current text-red" src="../assets/move-top-650752b8.svg" alt=""> -->
     </div>
   
 </div>

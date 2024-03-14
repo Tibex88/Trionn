@@ -11,7 +11,7 @@ import WorksCard from '../components/WorksCard.vue';
 
     <section class="p-5">
         <Hero 
-        title="roar in thedigital wilderness."
+        title="roar in the digital wilderness."
         subtitle="We roar with success, delivering the TRIONN®through versatile design, branding and the latesttech development to companies."
         />
 

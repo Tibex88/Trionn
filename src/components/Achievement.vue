@@ -18,30 +18,30 @@ gsap.registerPlugin(SplitText, ScrollTrigger)
 onMounted(()=>{
 
 let tl = gsap.timeline()
-let st = gsap.timeline()
+// let st = gsap.timeline()
 
 
-st.fromTo(card.value,{
-    x:100,
-},{
-    // scrub:true,
-    scrollTrigger:{
-        trigger:".card",
-        opacity:0,
-        toggleActions:"play none none none ",
-        //            onEnter onLeave   onEnterBack  onLeaveBack
-        onEnter: () =>{console.log("on enter")},
-        onLeave: () =>{console.log("on leave")},
-        onEnterBack: () =>{console.log("on enter back")},
-        onLeaveBack: () =>{console.log("on leave back")},
-        start:"top 60%",
-        end:"top 40%",
-        markers:true,
-        // toggleClass:"show"
-    },
-    x:0,
-    duration:3
-})
+// st.fromTo(card.value,{
+//     x:100,
+// },{
+//     // scrub:true,
+//     scrollTrigger:{
+//         trigger:".card",
+//         opacity:0,
+//         toggleActions:"play none none none ",
+//         //            onEnter onLeave   onEnterBack  onLeaveBack
+//         onEnter: () =>{console.log("on enter")},
+//         onLeave: () =>{console.log("on leave")},
+//         onEnterBack: () =>{console.log("on enter back")},
+//         onLeaveBack: () =>{console.log("on leave back")},
+//         start:"top 60%",
+//         end:"top 40%",
+//         markers:true,
+//         // toggleClass:"show"
+//     },
+//     x:0,
+//     duration:3
+// })
 
 })
 
