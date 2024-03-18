@@ -60,7 +60,7 @@ let tl = gsap.timeline()
     @mouseenter="play"
     @mouseleve="reverse"
     id="card"
-    class="card group text-black  transition-colors duration-700 rounded-2xl w-full flex flex-col gap-4 p-8 uppercase font-bold"
+    class="card throw group text-black  transition-colors duration-700 rounded-2xl w-full flex flex-col gap-4 p-8 uppercase font-bold"
     >
         <!-- <div class="">   -->
             <div class="self-start text-5xl overflow-hidden h-min">
