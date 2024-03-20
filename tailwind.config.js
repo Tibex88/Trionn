@@ -39,7 +39,7 @@ export default {
       },
       animation:{
         scroll_infinite:'scroll 20s linear infinite',
-        scroll_infinite_inverse:'scroll_b 20s linear infinite'
+        scroll_infinite_inverse:'scroll_b 20s linear infinite' 
       },
       keyframes:{
         scroll:{
