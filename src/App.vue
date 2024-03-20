@@ -15,7 +15,7 @@ var isDark = ref(false)
 
   <div :class="isDark ? 'dark': ''">
       
-    <div class="container outline outline-4 dark:bg-woodsmoke bg-porcelain dark:text-aqua_haze text-black ">
+    <div class="w-full h-full outline outline-4 dark:bg-woodsmoke bg-porcelain dark:text-aqua_haze text-black ">
 
         <Header v-model="isDark" />
 
